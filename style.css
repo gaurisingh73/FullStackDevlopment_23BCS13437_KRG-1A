@@ -1,114 +1,161 @@
-*{
+* {
     margin: 0;
     padding: 0;
     font-family: Arial, Helvetica, sans-serif;
     letter-spacing: 0.5px;
     word-spacing: 4px;
+    box-sizing: border-box;
 }
 
-
-body{
+body {
     background-color: #F5E8D8;
-    color: #F5E8D8;
-    border:#F5E8D8 solid; 
+    color: #1C1C1C;
+    line-height: 1.6;
 }
 
-div{
+header {
+    text-align: center;
+    padding: 20px 0;
     background-color: #1C1C1C;
-    margin: 20px 240px;    
-    padding: 60px;
-}
-
-header{
-    margin: 0;
+    color: #F5E8D8;
 }
 
 header h1 {
-    margin-bottom: 8px;
-    font-size: 50px;
+    font-size: 48px;
+    margin-bottom: 10px;
 }
 
 header p {
-    margin: 8px 0;
-}
-
-header nav {
-    margin: 8px 0;
-    display: flex;
-    justify-content: space-evenly;
+    font-size: 18px;
+    margin-bottom: 10px;
 }
 
 header nav a {
     color: #FF6F61;
+    text-decoration: none;
+    margin: 0 10px;
+    font-weight: bold;
 }
 
+header nav a:hover {
+    text-decoration: underline;
+}
+
+hr {
+    border: 1px solid #1C1C1C;
+}
+
+/* Main content */
 main {
-    padding: 20px;
+    padding: 40px 60px;
 }
 
-section{
-    margin: 30px 0;
+main h2 {
+    font-size: 28px;
+    margin: 40px 0 10px;
+    color: #1C1C1C;
+    border-bottom: 2px solid #FF6F61;
+    display: inline-block;
 }
 
-section h2 {
-    margin: 20px 0;
-    font-size: xx-large;
+main h3 {
+    font-size: 20px;
+    margin-top: 20px;
+    color: #FF6F61;
 }
 
-#about p {
-    font-size: large;
+main ul, main ol {
+    margin-left: 20px;
+    margin-top: 10px;
 }
 
-#skills ul {
-    padding-left: 20px;
+main ul li, main ol li {
+    margin-bottom: 8px;
 }
 
-#skills ul li{
-    margin-top: 4px;
-}
-
-#projects ol {
-    padding-left: 20px;
-}
-
-#projects ol li {
-    margin-top: 8px;
-}
-
-#education table thead tr th{
-    padding: 5px 100px;
-}
-
-#education table tbody tr td{
-    text-align: center;
-    padding: 5px 0;
-}
-
-#contact form {
-    background-color: #F5E8D8;
-    margin: 20px 200px;
-    padding: 20px 40px;
+/* Education table */
+#education table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff;
     color: #1C1C1C;
 }
 
-#contact form input {
-    width:100%;
-    padding: 2px;
+#education th, #education td {
+    padding: 10px;
+    text-align: center;
+    border: 1px solid #ccc;
 }
 
-#contact form textarea{
-    width: 100%;
-}
-
-#contact form button{
-    width: 50%;
-    margin-left: 25%;
-    padding: 4px;
-    background-color:#FF6F61;
+#education thead {
+    background-color: #FF6F61;
     color: white;
 }
 
-footer p{
-    margin-top: 10px;
-    margin-left: 8px;
+#contact form {
+    background-color: #fff;
+    margin: 40px auto;
+    padding: 30px;
+    max-width: 600px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    color: #1C1C1C;
+}
+
+#contact form label {
+    display: block;
+    margin-top: 15px;
+    font-weight: bold;
+}
+
+#contact form input,
+#contact form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-top: 5px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
+
+#contact form button {
+    width: 100%;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #FF6F61;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+#contact form button:hover {
+    background-color: #e0554e;
+}
+
+footer {
+    background-color: #1C1C1C;
+    color: #F5E8D8;
+    text-align: center;
+    padding: 10px 0;
+    margin-top: 40px;
+    font-size: 14px;
+}
+
+@media screen and (max-width: 768px) {
+    main {
+        padding: 20px;
+    }
+
+    #contact form {
+        margin: 20px;
+        padding: 20px;
+    }
+
+    header nav {
+        flex-direction: column;
+        gap: 10px;
+    }
 }
