@@ -1,0 +1,69 @@
+Hoisting -  when we declare a variable it moves to the top of the scope 
+
+---------------------------------------------------------------------------------------------------
+                scope          Redeclare       reInitialize        Hoisted 
+---------------------------------------------------------------------------------------------------
+Var             function       yes             yes                 yes
+let             block          no              yes                 yes (Temporal Dead Zone)
+const           block          no              no                  yes (TDZ)
+
+
+TDZ - It’s the period between the start of a scope (function, block, or script) and the point where a let or const variable is actually declared — during this time, the variable exists but cannot be accessed.
+
+
+---------------------------------------------------------------------------------------------------
+Case when we can change the value of an object
+-----------------------------------------------
+
+        const person = { name: "Alice", age: 25 };
+
+        // ✅ Changing a property — allowed
+        person.age = 26;  
+        console.log(person.age); // 26
+
+        // ✅ Adding a property — allowed
+        person.city = "Paris";   
+        console.log(person.city); // "Paris"
+
+        // ❌ Reassigning the variable — not allowed
+        person = { name: "Bob" }; // TypeError
+
+
+If you truly want an immutable object
+-----------------------------------------------
+
+        const frozenPerson = Object.freeze({ name: "Alice", age: 25 });
+
+        frozenPerson.age = 30; // ❌ Ignored in non-strict mode, throws in strict mode
+        console.log(frozenPerson.age); // Still 25
+
+---------------------------------------------------------------------------------------------------
+How variables are stored in JS
+-----------------------------------------------
+Primitive types (string, number, boolean, null, undefined, symbol, bigint) are stored directly in the stack.
+
+        let a = 10;      // stored directly in stack
+        let b = a;       // copies the value (now independent)
+        b = 20;
+        console.log(a);  // 10
+        console.log(b);  // 20
+
+Heap — for reference values
+-----------------------------------------------
+
+        let obj1 = { name: "Alice" }; // object stored in heap, reference in stack
+        let obj2 = obj1;              // copies the reference (not the object)
+        obj2.name = "Bob";
+
+        console.log(obj1.name); // "Bob" — both point to the same heap object
+
+
+---------------------------------------------------------------------------------------------------
+console.log(undefined == null); // true
+console.log(undefined === null); // false
+
+console.log(NaN + 2); // NaN
+
+---------------------------------------------------------------------------------------------------
+
+

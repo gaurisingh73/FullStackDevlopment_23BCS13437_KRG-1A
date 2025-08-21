@@ -4,110 +4,126 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link href="style.css" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
   <title>Deepanshu Saini</title>
 </head>
 
-<body>
-  <div>
-    <header>
-      <h1>Deepanshu Saini</h1>
-      <p>MERN Full Stack Developer | Entrepreneur | Tech Mentor</p>
-      <hr>
-      <nav>
-        <a href="#about">About</a> 
-        <a href="#skills">Skills</a> 
-        <a href="#projects">Projects</a> 
-        <a href="#education">Education</a> 
-        <a href="#contact">Contact</a>
+<body class="bg-gray-100 text-gray-900 font-sans">
+  <div class="max-w-4xl mx-auto px-6">
+
+    <!-- Header -->
+    <header class="text-center py-10">
+      <h1 class="text-4xl font-bold text-blue-600">Deepanshu Saini</h1>
+      <p class="mt-2 text-lg text-gray-600">MERN Full Stack Developer | Entrepreneur | Tech Mentor</p>
+
+      <nav class="mt-6 flex justify-center gap-6 text-gray-700 font-medium">
+        <a href="#about" class="hover:text-blue-600">About</a>
+        <a href="#skills" class="hover:text-blue-600">Skills</a>
+        <a href="#projects" class="hover:text-blue-600">Projects</a>
+        <a href="#education" class="hover:text-blue-600">Education</a>
+        <a href="#contact" class="hover:text-blue-600">Contact</a>
       </nav>
     </header>
-  
-    <hr>
-  
-    <main>
-      <section id="about">
-        <h2>About Me</h2>
-        <p>
-          Hello! I'm Deepanshu Saini, a passionate MERN Stack Developer, tech mentor, and future entrepreneur. Currently pursuing my B.E. in Computer Science at Chandigarh University, I love building full-stack web applications and helping others grow in tech.
+
+    <main class="space-y-16">
+
+      <!-- About Section -->
+      <section id="about" class="bg-white p-6 rounded-lg shadow">
+        <h2 class="text-2xl font-semibold text-blue-500 mb-4">About Me</h2>
+        <p class="text-gray-700 leading-relaxed">
+          Hello! I'm Deepanshu Saini, a passionate MERN Stack Developer, tech mentor, and future entrepreneur.
+          Currently pursuing my B.E. in Computer Science at Chandigarh University, I love building full-stack web
+          applications and helping others grow in tech.
         </p>
       </section>
-  
-      <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-          <li>HTML, CSS, JavaScript</li>
-          <li>React.js, Node.js, Express.js</li>
-          <li>MongoDB, MySQL, Oracle</li>
-          <li>Git, GitHub, REST APIs</li>
+
+      <!-- Skills Section -->
+      <section id="skills" class="bg-white p-6 rounded-lg shadow">
+        <h2 class="text-2xl font-semibold text-blue-500 mb-4">Skills</h2>
+        <ul class="grid grid-cols-2 sm:grid-cols-3 gap-3 text-gray-700">
+          <li class="bg-blue-100 px-3 py-2 rounded text-center">HTML, CSS, JavaScript</li>
+          <li class="bg-blue-100 px-3 py-2 rounded text-center">React.js, Node.js, Express.js</li>
+          <li class="bg-blue-100 px-3 py-2 rounded text-center">MongoDB, MySQL, Oracle</li>
+          <li class="bg-blue-100 px-3 py-2 rounded text-center">Git, GitHub</li>
+          <li class="bg-blue-100 px-3 py-2 rounded text-center">REST APIs</li>
         </ul>
       </section>
-  
-      <section id="projects">
-        <h2>Projects</h2>
-        <ol>
-          <li>
-            <strong>Food Waste Management System</strong><br>
-            A platform that connects food donors to NGOs to reduce food wastage.
-          </li>
-          <li>
-            <strong>Worknest</strong><br>
-            A business tool for managing inventory, quotations, and customer data.
-          </li>
-          <li>
-            <strong>Expense Tracker</strong><br>
-            A simple app to track and visualize personal expenses.
-          </li>
-        </ol>
+
+      <!-- Projects Section -->
+      <section id="projects" class="bg-white p-6 rounded-lg shadow">
+        <h2 class="text-2xl font-semibold text-blue-500 mb-4">Projects</h2>
+        <div class="space-y-4">
+          <div>
+            <h3 class="font-bold text-lg">Food Waste Management System</h3>
+            <p class="text-gray-600">A platform that connects food donors to NGOs to reduce food wastage.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg">Worknest</h3>
+            <p class="text-gray-600">A business tool for managing inventory, quotations, and customer data.</p>
+          </div>
+          <div>
+            <h3 class="font-bold text-lg">Expense Tracker</h3>
+            <p class="text-gray-600">A simple app to track and visualize personal expenses.</p>
+          </div>
+        </div>
       </section>
-  
-      <section id="education">
-        <h2>Education</h2>
-        <table border="2">
-          <thead>
+
+      <!-- Education Section -->
+      <section id="education" class="bg-white p-6 rounded-lg shadow">
+        <h2 class="text-2xl font-semibold text-blue-500 mb-4">Education</h2>
+        <table class="w-full border-collapse border border-gray-300 text-center">
+          <thead class="bg-blue-100">
             <tr>
-              <th>Degree</th>
-              <th>Institute</th>
-              <th>Year</th>
+              <th class="border border-gray-300 px-4 py-2">Degree</th>
+              <th class="border border-gray-300 px-4 py-2">Institute</th>
+              <th class="border border-gray-300 px-4 py-2">Year</th>
             </tr>
           </thead>
           <tbody>
-            <tr>
-              <td>B.E. CSE</td>
-              <td>Chandigarh University</td>
-              <td>2027</td>
+            <tr class="hover:bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">B.E. CSE</td>
+              <td class="border border-gray-300 px-4 py-2">Chandigarh University</td>
+              <td class="border border-gray-300 px-4 py-2">2027</td>
             </tr>
-            <tr>
-              <td>12th</td>
-              <td>Halwasiya Vidya Vihar</td>
-              <td>2023</td>
+            <tr class="hover:bg-gray-50">
+              <td class="border border-gray-300 px-4 py-2">12th</td>
+              <td class="border border-gray-300 px-4 py-2">Halwasiya Vidya Vihar</td>
+              <td class="border border-gray-300 px-4 py-2">2023</td>
             </tr>
           </tbody>
         </table>
       </section>
-  
-      <section id="contact">
-        <h2>Contact Me</h2>
-        <form action="#">
-          <label for="name">Name:</label><br>
-          <input type="text" id="name" name="name"><br><br>
-  
-          <label for="email">Email:</label><br>
-          <input type="text" id="email" name="email"><br><br>
-  
-          <label for="message">Message:</label><br>
-          <textarea id="message" name="message" rows="5"></textarea><br><br>
-  
-          <button type="submit">Send</button>
+
+      <!-- Contact Section -->
+      <section id="contact" class="bg-white p-6 rounded-lg shadow">
+        <h2 class="text-2xl font-semibold text-blue-500 mb-4">Contact Me</h2>
+        <form action="#" class="space-y-4">
+          <div>
+            <label for="name" class="block font-medium">Name</label>
+            <input type="text" id="name" name="name"
+              class="w-full border border-gray-300 rounded px-3 py-2 mt-1 focus:ring-2 focus:ring-blue-400 outline-none">
+          </div>
+          <div>
+            <label for="email" class="block font-medium">Email</label>
+            <input type="email" id="email" name="email"
+              class="w-full border border-gray-300 rounded px-3 py-2 mt-1 focus:ring-2 focus:ring-blue-400 outline-none">
+          </div>
+          <div>
+            <label for="message" class="block font-medium">Message</label>
+            <textarea id="message" name="message" rows="5"
+              class="w-full border border-gray-300 rounded px-3 py-2 mt-1 focus:ring-2 focus:ring-blue-400 outline-none"></textarea>
+          </div>
+          <button type="submit"
+            class="px-5 py-2 bg-blue-600 text-white rounded hover:bg-blue-700 transition">Send</button>
         </form>
       </section>
     </main>
-  
-    <hr>
-  
-    <footer>
+
+    <!-- Footer -->
+    <footer class="text-center py-6 text-gray-600 mt-12 border-t">
       <p>&copy; 2025 Deepanshu Saini. All rights reserved.</p>
     </footer>
+
   </div>
 </body>
 
