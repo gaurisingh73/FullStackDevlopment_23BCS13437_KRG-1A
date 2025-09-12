@@ -4,7 +4,6 @@
   box-sizing: border-box;
 }
 
-/* CSS Variables for theming */
 :root {
   --bg-color: #ffffff;
   --text-color: #000000;
@@ -28,7 +27,6 @@ body {
   transition: all 0.3s ease;
 }
 
-/* Main Grid Layout */
 .dashboard {
   display: grid;
   grid-template-columns: 250px 1fr;
@@ -36,7 +34,6 @@ body {
   min-height: 100vh;
 }
 
-/* Sidebar Styling */
 .sidebar {
   grid-area: sidebar;
   background-color: var(--sidebar-bg);
@@ -78,7 +75,6 @@ body {
   color: white;
 }
 
-/* Content Area */
 .content {
   grid-area: content;
   padding: 2rem;
@@ -111,7 +107,6 @@ body {
   background-color: #0056b3;
 }
 
-/* Stats Cards */
 .stats-section {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
@@ -146,7 +141,6 @@ body {
 }
 
 
-/* Table Section */
 .table-section {
   background-color: var(--card-bg);
   padding: 1.5rem;
@@ -194,7 +188,6 @@ body {
   color: white;
 }
 
-/* Mobile Responsive */
 @media (max-width: 768px) {
   .dashboard {
     grid-template-columns: 1fr;
