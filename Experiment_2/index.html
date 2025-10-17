@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="dashboard" data-theme="light">
+        <aside class="sidebar">
+            <h2>Admin Panel</h2>
+            <nav>
+                <ul class="nav-menu">
+                    <li class="nav-item">
+                        <a href="#" class="nav-link active">Dashboard</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Users</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Products</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Orders</a>
+                    </li>
+                    <li class="nav-item">
+                        <a href="#" class="nav-link">Settings</a>
+                    </li>
+                </ul>
+            </nav>
+        </aside>
+
+        <main class="content">
+            <div class="header">
+                <h1>Dashboard</h1>
+                <button id="theme-toggle">Toggle Dark Mode</button>
+            </div>
+
+            <section class="stats-section">
+                <div class="card">
+                    <h3>Total Users</h3>
+                    <div class="card-number">1,234</div>
+                    <p>+12% this month</p>
+                </div>
+                <div class="card">
+                    <h3>Revenue</h3>
+                    <div class="card-number">$45,678</div>
+                    <p>+8% this month</p>
+                </div>
+                <div class="card">
+                    <h3>Orders</h3>
+                    <div class="card-number">567</div>
+                    <p>+15% this month</p>
+                </div>
+                <div class="card">
+                    <h3>Products</h3>
+                    <div class="card-number">89</div>
+                    <p>+3 new items</p>
+                </div>
+            </section>
+
+            <section class="table-section">
+                <h3>Recent Orders</h3>
+                <table class="data-table">
+                    <thead>
+                        <tr>
+                            <th>Order ID</th>
+                            <th>Customer</th>
+                            <th>Product</th>
+                            <th>Amount</th>
+                            <th>Status</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>#001</td>
+                            <td>Nina</td>
+                            <td>Laptop</td>
+                            <td>$999</td>
+                            <td><span class="status active">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>#002</td>
+                            <td>Deepanshu</td>
+                            <td>Phone</td>
+                            <td>$699</td>
+                            <td><span class="status pending">Pending</span></td>
+                        </tr>
+                        <tr>
+                            <td>#003</td>
+                            <td>Jack</td>
+                            <td>Tablet</td>
+                            <td>$399</td>
+                            <td><span class="status active">Active</span></td>
+                        </tr>
+                        <tr>
+                            <td>#004</td>
+                            <td>Wednesday</td>
+                            <td>Headphones</td>
+                            <td>$199</td>
+                            <td><span class="status inactive">Inactive</span></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </main>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
