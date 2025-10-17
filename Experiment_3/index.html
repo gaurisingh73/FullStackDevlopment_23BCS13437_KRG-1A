@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Filter System</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>Product Store</h1>
+            <p>Find the perfect product with our advanced filtering system</p>
+        </div>
+
+        <div class="filter-section">
+            <div class="filter-controls">
+                <div class="filter-group">
+                    <label for="filter">Category:</label>
+                    <select id="filter">
+                        <option value="all">All Products</option>
+                        <option value="electronics">Electronics</option>
+                        <option value="clothing">Clothing</option>
+                        <option value="books">Books</option>
+                        <option value="home">Home & Garden</option>
+                        <option value="sports">Sports</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="price-filter">Price Range:</label>
+                    <select id="price-filter">
+                        <option value="all">All Prices</option>
+                        <option value="0-50">$0 - $50</option>
+                        <option value="51-200">$51 - $200</option>
+                        <option value="201-500">$201 - $500</option>
+                        <option value="501+">$501+</option>
+                    </select>
+                </div>
+
+                <div class="filter-group">
+                    <label for="search-box">Search:</label>
+                    <input type="text" id="search-box" placeholder="Search products...">
+                </div>
+
+                <button class="clear-filters" id="clear-filters">Clear All Filters</button>
+            </div>
+        </div>
+
+        <div class="results-info">
+            <div class="results-count" id="results-count">
+                Showing all products
+            </div>
+            <div class="sort-options">
+                <label for="sort-select">Sort by:</label>
+                <select id="sort-select">
+                    <option value="name">Name (A-Z)</option>
+                    <option value="price-low">Price (Low to High)</option>
+                    <option value="price-high">Price (High to Low)</option>
+                    <option value="rating">Rating</option>
+                </select>
+            </div>
+        </div>
+
+        <div id="products-container">
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
