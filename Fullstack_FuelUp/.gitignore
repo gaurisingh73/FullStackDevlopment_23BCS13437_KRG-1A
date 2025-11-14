@@ -1,0 +1,14 @@
+node_modules/
+.env
+/target/
+build/
+*.log
+*.class
+.idea/
+*.iml
+.project
+.settings/
+.gradle/
+node_modules/
+.env
+target/
