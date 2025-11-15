@@ -1,0 +1,10 @@
+/Users/gaurisingh/Fullstack_Fuelup/FuelUp/backend/src/main/java/com/company/fuelup/backend/security/SecurityConfig.java
+/Users/gaurisingh/Fullstack_Fuelup/FuelUp/backend/src/main/java/com/company/fuelup/backend/dto/SignupRequest.java
+/Users/gaurisingh/Fullstack_Fuelup/FuelUp/backend/src/main/java/com/company/fuelup/backend/service/UserService.java
+/Users/gaurisingh/Fullstack_Fuelup/FuelUp/backend/src/main/java/com/company/fuelup/backend/controller/AuthController.java
+/Users/gaurisingh/Fullstack_Fuelup/FuelUp/backend/src/main/java/com/company/fuelup/backend/model/User.java
+/Users/gaurisingh/Fullstack_Fuelup/FuelUp/backend/src/main/java/com/company/fuelup/backend/BackendApplication.java
+/Users/gaurisingh/Fullstack_Fuelup/FuelUp/backend/src/main/java/com/company/fuelup/backend/dto/AuthResponse.java
+/Users/gaurisingh/Fullstack_Fuelup/FuelUp/backend/src/main/java/com/company/fuelup/backend/repository/UserRepository.java
+/Users/gaurisingh/Fullstack_Fuelup/FuelUp/backend/src/main/java/com/company/fuelup/backend/dto/AuthRequest.java
+/Users/gaurisingh/Fullstack_Fuelup/FuelUp/backend/src/main/java/com/company/fuelup/backend/security/JwtUtil.java

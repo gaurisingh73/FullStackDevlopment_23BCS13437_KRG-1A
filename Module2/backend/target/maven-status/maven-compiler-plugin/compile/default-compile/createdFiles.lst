@@ -1,0 +1,12 @@
+com/company/fuelup/backend/BackendApplication.class
+com/company/fuelup/backend/controller/AuthController.class
+com/company/fuelup/backend/model/User.class
+com/company/fuelup/backend/security/JwtUtil.class
+com/company/fuelup/backend/repository/UserRepository.class
+com/company/fuelup/backend/dto/AuthResponse.class
+com/company/fuelup/backend/controller/AuthController$SignupRequest.class
+com/company/fuelup/backend/security/SecurityConfig.class
+com/company/fuelup/backend/controller/AuthController$LoginRequest.class
+com/company/fuelup/backend/dto/SignupRequest.class
+com/company/fuelup/backend/dto/AuthRequest.class
+com/company/fuelup/backend/service/UserService.class
